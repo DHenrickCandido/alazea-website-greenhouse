@@ -1,0 +1,141 @@
+form {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"],
+  input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+  }
+  p{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  } */
+  
+  .iot {
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #sel_estufa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+  
+  .container .forms{
+      margin-top: 40px;
+      padding-top: 50px;
+      border-color: black;
+  }
+  .vertical-center {
+      min-height: 100%;  
+      min-height: 100vh; 
+      display: flex;
+      align-items: center;
+    }
+  
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 5px 0;
+      font-size: 1em;
+      font-family: sans-serif;
+      min-width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    table thead th {
+      background-color: #009879;
+      color: #ffffff;
+      font-weight: bold;
+      text-align: left;
+    }
+    
+    table th,
+    table td {
+      padding: 12px 15px;
+      border: 1px solid #e6e6e6;
+    }
+    th:first-child, td:first-child {
+      width: 24%;
+    }
+    
+    th:nth-child(2), td:nth-child(2) {
+      width: 24%;
+    }
+  
+    th:nth-child(3), td:nth-child(3) {
+      width: 24%;
+    }
+      
+    th:last-child, td:last-child {
+      width: auto;
+    }
+    
+    table tbody tr {
+      border-bottom: 1px solid #e6e6e6;
+    }
+    
+    table tbody tr:nth-of-type(even) {
+      background-color: #f9f9f9;
+    }
+    
+    table tbody tr:last-of-type {
+      border-bottom: 2px solid #009879;
+    }
+  
+    

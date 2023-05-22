@@ -1,0 +1,26 @@
+{% extends "/iot/base.html" %}
+{% block content %}
+    <div class="iot">
+        <div class="center">
+            <form action="/iot/exibe_estufa" method="post">
+                <input type="number" name="sel_estufa" id="sel_estufa" placeholder="Selecione o ID da estufa" required>
+                <input type="submit" value = "Enviar">
+            </form>
+        </div>
+
+        <table>
+            <tr>
+                <td>Estufa</td>
+                <td>Temperatura</td>
+                <td>Umidade</td>
+                <td>Nivel De Agua</td>
+            </tr>
+            <tr>
+                <td>{{ estufas[estufa_selecionada] }}</td>
+                <td>{{ temperatura[estufa_selecionada] }}</td>
+                <td>{{ umidade[estufa_selecionada] }}</td>
+                <td>{{ nivel_agua[estufa_selecionada] }}</td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

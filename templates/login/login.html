@@ -1,0 +1,21 @@
+{% extends "/login/base.html" %}
+{% block content %}
+        <div class="login">
+            <form action = "/login/login_user" method = "POST">
+                <h2>Logar:</h2>
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                <div class="notification is-danger">
+                {{ messages[0] }}
+                </div>
+                {% endif %}
+                {% endwith %}
+                <p><input class="botaoMeio" type = "text" name = "username" placeholder="Usuário"/></p>
+                <p><input type = "password" name = "Senha" placeholder="Senha"/></p>
+                <p><input type = "submit" value = "Logar" /></p>
+                <p><a href="/login/ccadastro"><input class="botaoMeio" type="button" value="Cadastro"></a></p>
+
+            </form>
+            
+        </div>
+{% endblock %}

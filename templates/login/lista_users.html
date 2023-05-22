@@ -1,0 +1,17 @@
+{% extends "/login/base.html" %}
+{% block content %}
+    <div class="login">
+        <p><h2>Usuarios</h2></p>
+        <ul>
+            {% for i in range(e_mail| length) %}
+            <table>
+                <tr>
+                    <td>{{ e_mail[i] }}</td>
+                    <td>{{ users[i] }} </td>
+                </tr>
+            </table>
+            {% endfor %}
+        </ul>   
+    </div>
+
+{% endblock %}
